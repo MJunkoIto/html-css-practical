@@ -99,8 +99,13 @@ img {
 
 /* プロフィールの説明部分 */
 .content {
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0 20px;
+}
+
+.circle,
+.content {
+  width: 50%;
 }
 
 /* Works */
