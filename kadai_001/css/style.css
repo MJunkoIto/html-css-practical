@@ -20,7 +20,7 @@ p {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  max-width: 960px;
+  max-width: 1180px;
 }
 
 .header-inner a {
@@ -93,8 +93,8 @@ img {
 /* 丸く切り取る画像 */
 .circle {
   border-radius: 50%;
-  width: 40px;
-  height: 280px;
+  width: 240px;
+  height: 240px;
 }
 
 /* プロフィールの説明部分 */
@@ -102,6 +102,7 @@ img {
   margin: 20px auto;
   padding: 0 20px;
   width: 60%;
+  font-size: 15px;
 }
 
 /* Works */
@@ -135,6 +136,30 @@ footer p {
   h2 {
     padding: 30px 0 20px;
     font-size: 28px;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+
+  nav a {
+    font-size: 21px;
+  }
+
+  .item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 28;
+  }
+
+  h2 {
+    padding: 30px 0 20px;
   }
 
   nav li {
