@@ -88,6 +88,7 @@ img {
 .name {
   font-size: 24px;
   font-weight: bold;
+  text-align: center;
 }
 
 /* 丸く切り取る画像 */
@@ -101,7 +102,7 @@ img {
 .content {
   margin: 20px auto;
   padding: 0 20px;
-  width: 60%;
+  width: 90%;
   font-size: 15px;
 }
 
