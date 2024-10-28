@@ -31,7 +31,7 @@ p {
 
 /* MyProfileの見出し部分 */
 h1 {
-  margin: 0 0 0 20px;
+  margin: 0 20px 0 20px;
   font-size: 34px;
   border: 1px solid black;
   padding: 0px 20px;
@@ -70,7 +70,7 @@ li {
 
 /* 画像 */
 img {
-  margin: 20px auto;
+  margin: 0px auto 20px auto;
   width: 100%;
 }
 
@@ -102,7 +102,7 @@ img {
 .content {
   margin: 20px auto;
   padding: 0 20px;
-  width: 90%;
+  width: 60%;
   font-size: 15px;
 }
 
@@ -177,3 +177,103 @@ footer p {
     padding-bottom: 40px;
   }
 }
+
+#contact {
+  text-align: center;
+}
+
+.contact p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.contact a {
+  text-align: center;
+  font-size: 17px; 
+}
+
+a.btn_08 {
+  position: relative;
+  display: block;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+a.btn_08::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 50%;
+  height: 70%;
+  background: linear-gradient(155deg, #ffbfbf 20%, #c2fcf9 40%, #f9c5ff 51%, #ffbfbf 80%);
+  border-radius: 7em;
+  box-sizing: border-box;
+}
+a.btn_08::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 50%;
+  height: 70%;
+  background-color: #e90063;
+  border-radius: 7em;
+  box-sizing: border-box;
+  transform: translate(0, -10px);
+}
+a.btn_08 span {
+  position: relative;
+  display: block;
+  padding: 1rem 5rem;
+  transform: translate(0, -10px);
+  overflow: hidden;
+  z-index: +1;
+}
+a.btn_08 span::before {
+  content: "";
+  position: absolute;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transform: rotate(45deg);
+}
+a.btn_08::after, a.btn_08 span {
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+a.btn_08:hover::after, a.btn_08:hover span {
+  transform: translate(0, 0);
+}
+a.btn_08:hover span::before {
+  animation: shine 1s ease-in-out 1;
+}
+@keyframes shine {
+  0% {
+    transform: scale(1) rotate(45deg);
+    opacity: 0;
+  }
+  10% {
+    transform: scale(1) rotate(45deg);
+    opacity: 0.5;
+  }
+  20% {
+    transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+
+
+
+
